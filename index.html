@@ -14,52 +14,51 @@
     <title>Enter Your Card</title>
   </head>
   <body>
-    <div class="container">
-      <section id="card-info-container">
-        <div class="card-images-container">
-          <div class="card-img-top">
-            <img src="./images/bg-card-front.png" alt="front credit card" />
+    <div class="cc-bg">
+      <div class="container">
+        <div class="cc-component-container">
+          <div class="cc-images">
+            <div class="front-cc-img">
+              <img src="./images/bg-card-front.png" alt="cc front" />
+            </div>
+            <div class="back-cc-img">
+              <img src="./images/bg-card-back.png" alt="cc back" />
+            </div>
           </div>
-          <div class="card-img-bottom">
-            <img src="./images/bg-card-back.png" alt="back credit card" />
-          </div>
+          <form id="cc-form">
+            <div class="form-control">
+              <label>Cardholder Name</label>
+              <input
+                type="text"
+                id="name-input"
+                placeholder="e.g. John Appleseed"
+              />
+            </div>
+            <div class="form-control">
+              <label>Card Number</label>
+              <input
+                type="text"
+                id="number-input"
+                placeholder="e.g. 1234 5678 9123 0000"
+              />
+            </div>
+            <div class="date-cvc-form-container">
+              <div>
+                <label>Exp. Date (mm/yy)</label>
+                <input type="text" id="month-input" placeholder="MM" />
+                <input type="text" id="year-input" placeholder="YY" />
+              </div>
+              <div>
+                <label>cvc</label>
+                <input type="text" id="cvc-input" placeholder="e.g. 123" />
+              </div>
+            </div>
+            <div class="form-control">
+              <button type="submit">Confirm</button>
+            </div>
+          </form>
         </div>
-          <div class="card-info-form">
-            <form>
-              <div class="form-control">
-                <label>Cardholder Name</label>
-                <input
-                  type="text"
-                  id="name-input"
-                  placeholder="e.g. John Appleseed"
-                />
-              </div>
-              <div class="form-control">
-                <label>Card Number</label>
-                <input
-                  type="text"
-                  id="number-input"
-                  placeholder="e.g. 1234 5678 9123 0000"
-                />
-              </div>
-              <div class="date-cvc-form-container">
-                <div>
-                  <label>Exp. Date (mm/yy)</label>
-                  <input type="text" id="month-input" placeholder="MM" />
-                  <input type="text" id="year-input" placeholder="YY" />
-                </div>
-                <div>
-                  <label>cvc</label>
-                  <input type="text" id="cvc-input" placeholder="e.g. 123" />
-                </div>
-              </div>
-              <div class="form-control">
-                <button type="submit">Confirm</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

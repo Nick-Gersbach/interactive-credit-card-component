@@ -5,14 +5,31 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+.cc-bg {
+  background: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  height: 100vh;
+}
+
 .container {
   max-width: 1250px;
   margin: auto;
   padding: 0 3rem;
 }
 
-#card-info-container {
+.cc-component-container {
+  padding-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.cc-images {
+  position: relative;
+}
+
+.back-cc-img img {
+  transform: translateX(6rem);
+  padding-top: 2rem;
 }
