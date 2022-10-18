@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Enter Your Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <section id="card-info-container">
+        <div class="card-images-container">
+          <div class="card-img-top">
+            <img src="./images/bg-card-front.png" alt="front credit card" />
+          </div>
+          <div class="card-img-bottom">
+            <img src="./images/bg-card-back.png" alt="back credit card" />
+          </div>
+        </div>
+          <div class="card-info-form">
+            <form>
+              <div class="form-control">
+                <label>Cardholder Name</label>
+                <input
+                  type="text"
+                  id="name-input"
+                  placeholder="e.g. John Appleseed"
+                />
+              </div>
+              <div class="form-control">
+                <label>Card Number</label>
+                <input
+                  type="text"
+                  id="number-input"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                />
+              </div>
+              <div class="date-cvc-form-container">
+                <div>
+                  <label>Exp. Date (mm/yy)</label>
+                  <input type="text" id="month-input" placeholder="MM" />
+                  <input type="text" id="year-input" placeholder="YY" />
+                </div>
+                <div>
+                  <label>cvc</label>
+                  <input type="text" id="cvc-input" placeholder="e.g. 123" />
+                </div>
+              </div>
+              <div class="form-control">
+                <button type="submit">Confirm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
