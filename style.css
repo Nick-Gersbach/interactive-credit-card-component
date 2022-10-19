@@ -5,6 +5,20 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+/* 
+
+
+
+
+
+CC Background
+
+
+
+
+
+*/
+
 .cc-bg {
   background: url(./images/bg-main-desktop.png);
   background-repeat: no-repeat;
@@ -84,4 +98,109 @@ p.cvc-number {
   position: absolute;
   top: 51%;
   right: 12%;
+}
+
+/* 
+
+
+
+
+
+
+
+CC Form
+
+
+
+
+
+
+*/
+
+.form-control {
+  margin: 1.7rem 0rem;
+}
+
+label {
+  display: block;
+  color: #21092f;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+input.big-input {
+  width: 381px;
+  height: 45px;
+  padding-left: 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #dfdee0;
+}
+
+input.big-input::placeholder {
+  color: #21092f;
+  opacity: 0.25;
+  font-size: 18px;
+}
+
+.date-cvc-form-container {
+  position: relative;
+}
+
+label.cvc-label {
+  position: absolute;
+  top: 5%;
+  right: 44%;
+}
+
+input.date-inputs {
+  width: 80px;
+  height: 45px;
+  padding-left: 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #dfdee0;
+}
+
+input.date-inputs::placeholder {
+  color: #21092f;
+  opacity: 0.25;
+  font-size: 18px;
+}
+
+input.cvc-input-style {
+  width: 191px;
+  height: 45px;
+  padding-left: 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #dfdee0;
+  margin-left: 14px;
+}
+
+input.cvc-input-style::placeholder {
+  color: #21092f;
+  opacity: 0.25;
+  font-size: 18px;
+}
+
+button {
+  width: 381px;
+  height: 53px;
+  border: none;
+  background: #21092f;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
 }
