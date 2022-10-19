@@ -29,7 +29,59 @@
   position: relative;
 }
 
-.back-cc-img img {
+.front-cc-img {
+  position: relative;
+}
+
+.cc-logo img {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+}
+
+p.cc-number {
+  position: absolute;
+  top: 48%;
+  left: 9%;
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.cc-cardholder-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+p.cc-name {
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 82%;
+  left: 8%;
+}
+
+p.cc-date {
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 82%;
+  right: 8%;
+}
+
+.back-cc-img {
   transform: translateX(6rem);
   padding-top: 2rem;
+  position: relative;
+}
+
+p.cvc-number {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 51%;
+  right: 12%;
 }
