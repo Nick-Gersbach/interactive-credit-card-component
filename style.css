@@ -118,12 +118,6 @@ CC Form
 
 */
 
-.cc-form {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .form-control {
   margin: 1.7rem 0rem;
 }
@@ -212,30 +206,16 @@ button:hover {
   opacity: 0.9;
 }
 
-/* 
+/*
 
 
-
-
-
-
-
-Mobile Views
-
-
-
-
-
-
-
-*/
-
-/* 
 
 
 
 
 Mobile Lanscape
+
+
 
 
 
@@ -250,15 +230,11 @@ Mobile Lanscape
 }
 
 @media only screen and (max-width: 999px) {
-  * {
-    border: 1px solid red;
-  }
-
   .cc-bg {
     background: url(./images/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 20vh;
     position: relative;
   }
 
@@ -339,7 +315,13 @@ Mobile Lanscape
   }
 
   form {
-    display: none;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .cc-bg {
+    height: 25vh;
   }
 }
 
@@ -362,5 +344,73 @@ Mobile Portrait
 
   .front-cc-img {
     transform: translateX(-15px);
+  }
+
+  input.big-input {
+    width: 330px;
+    height: 45px;
+  }
+
+  input.date-inputs {
+    width: 60px;
+  }
+
+  input.cvc-input-style {
+    width: 140px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* 
+
+
+
+
+Mobile Portrait Small
+
+
+
+
+*/
+
+@media only screen and (max-width: 320px) {
+  .back-cc-img {
+    width: 280px;
+    height: 250px;
+  }
+
+  .front-cc-img {
+    width: 280px;
+    height: 250px;
+    z-index: 2;
+  }
+
+  p.cvc-number {
+    font-size: 9px;
+    top: 28%;
+  }
+
+  p.cc-number {
+    top: 34%;
+    left: 8%;
+  }
+
+  p.cc-name {
+    top: 51%;
+    left: 8%;
+  }
+
+  p.cc-date {
+    font-size: 9px;
+    top: 51%;
+    right: 8%;
+  }
+
+  input.big-input {
+    width: 300px;
+    height: 45px;
   }
 }
