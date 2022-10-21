@@ -24,6 +24,7 @@ CC Background
   background-repeat: no-repeat;
   background-size: 30%;
   height: 100vh;
+  position: relative;
 }
 
 .container {
@@ -117,6 +118,12 @@ CC Form
 
 */
 
+.cc-form {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .form-control {
   margin: 1.7rem 0rem;
 }
@@ -203,4 +210,88 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+
+/* 
+
+
+
+
+
+
+
+Mobile Views
+
+
+
+
+
+
+
+*/
+
+@media only screen and (max-width: 850px) {
+  * {
+    border: 1px solid red;
+  }
+
+  .cc-bg {
+    background: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+  }
+
+  .container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 0rem;
+  }
+
+  .cc-component-container {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .cc-images {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .back-cc-img {
+    transform: translateX(12px);
+    padding-top: 0rem;
+    position: relative;
+    background: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 340px;
+    height: 250px;
+  }
+
+  .back-cc-img img {
+    display: none;
+  }
+
+  .front-cc-img {
+    transform: translateX(-14px);
+    margin-top: -6rem;
+    background: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 340px;
+    height: 250px;
+    z-index: 2;
+  }
+
+  .front-cc-img img {
+    display: none;
+  }
+
+  form {
+    display: none;
+  }
 }
