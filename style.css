@@ -241,6 +241,14 @@ Mobile Lanscape
 
 */
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 2rem;
+  }
+}
+
 @media only screen and (max-width: 999px) {
   * {
     border: 1px solid red;
@@ -250,7 +258,7 @@ Mobile Lanscape
     background: url(./images/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
     position: relative;
   }
 
@@ -293,8 +301,8 @@ Mobile Lanscape
   }
 
   .front-cc-img {
-    transform: translateX(-14px);
-    margin-top: -6rem;
+    transform: translateX(-50px);
+    margin-top: -9rem;
     background: url(./images/bg-card-front.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -349,6 +357,10 @@ Mobile Portrait
 
 @media only screen and (max-width: 639px) {
   .cc-bg {
-    height: 37vh;
+    height: 36vh;
+  }
+
+  .front-cc-img {
+    transform: translateX(-15px);
   }
 }
