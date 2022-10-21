@@ -230,7 +230,18 @@ Mobile Views
 
 */
 
-@media only screen and (max-width: 850px) {
+/* 
+
+
+
+
+Mobile Lanscape
+
+
+
+*/
+
+@media only screen and (max-width: 999px) {
   * {
     border: 1px solid red;
   }
@@ -239,7 +250,7 @@ Mobile Views
     background: url(./images/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 90vh;
     position: relative;
   }
 
@@ -276,6 +287,11 @@ Mobile Views
     display: none;
   }
 
+  p.cvc-number {
+    font-size: 9px;
+    top: 34%;
+  }
+
   .front-cc-img {
     transform: translateX(-14px);
     margin-top: -6rem;
@@ -291,7 +307,48 @@ Mobile Views
     display: none;
   }
 
+  .cc-logo img {
+    display: block;
+    width: 50px;
+  }
+
+  p.cc-number {
+    top: 40%;
+    left: 11%;
+    font-size: 18px;
+  }
+
+  p.cc-name {
+    font-size: 9px;
+    top: 62%;
+    left: 8%;
+  }
+
+  p.cc-date {
+    font-size: 9px;
+    top: 62%;
+    right: 8%;
+  }
+
   form {
     display: none;
+  }
+}
+
+/* 
+
+
+
+
+Mobile Portrait
+
+
+
+
+*/
+
+@media only screen and (max-width: 639px) {
+  .cc-bg {
+    height: 37vh;
   }
 }
