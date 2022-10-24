@@ -118,6 +118,10 @@ CC Form
 
 */
 
+form {
+  display: block;
+}
+
 .form-control {
   margin: 1.7rem 0rem;
 }
@@ -206,6 +210,49 @@ button:hover {
   opacity: 0.9;
 }
 
+/* 
+
+
+
+
+
+
+Thank You Message
+
+
+
+
+
+*/
+
+#email-thankyou-message {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+#email-thankyou-message.show {
+  display: flex;
+}
+
+.thankyou-img {
+  margin-bottom: 1.5rem;
+}
+
+#email-thankyou-message h3 {
+  color: #21092f;
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+#email-thankyou-message p {
+  color: #8f8694;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+}
+
 /*
 
 
@@ -226,6 +273,10 @@ Mobile Lanscape
     max-width: 1250px;
     margin: auto;
     padding: 0 2rem;
+  }
+
+  form {
+    display: block;
   }
 }
 
@@ -316,6 +367,16 @@ Mobile Lanscape
 
   form {
     display: block;
+  }
+
+  #email-thankyou-message p {
+    color: #8f8694;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .continue-btn {
+    margin-bottom: 2rem;
   }
 }
 

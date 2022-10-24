@@ -1,3 +1,17 @@
+// UI Variables
+const confirmBtn = document.getElementById("confirm-btn");
+const thankYouMessage = document.getElementById("email-thankyou-message");
+const form = document.getElementById("cc-form");
+
+confirmBtn.addEventListener("click", displayThankYou);
+
+function displayThankYou(event) {
+  thankYouMessage.classList.add("show");
+  form.style.display = "none";
+
+  event.preventDefault();
+}
+
 //Add Spaces every 4 Numbers for CC Number
 document
   .getElementById("cc-number-input")
