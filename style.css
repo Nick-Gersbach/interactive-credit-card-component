@@ -192,6 +192,22 @@ input.cvc-input-style::placeholder {
   font-size: 18px;
 }
 
+.form-control small {
+  color: #ff5050;
+  font-size: 12px;
+  display: block;
+  padding-top: 6px;
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border-color: #ff5050;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
 button {
   width: 381px;
   height: 53px;
