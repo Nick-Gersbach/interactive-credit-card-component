@@ -1,11 +1,16 @@
 // UI Variables
+const form = document.getElementById("cc-form");
+const nameInput = document.getElementById("name-input");
+const monthInput = document.getElementById("month-input");
+const yearInput = document.getElementById("year-input");
+const cvcInput = document.getElementById("cvc-input");
 const confirmBtn = document.getElementById("confirm-btn");
 const thankYouMessage = document.getElementById("email-thankyou-message");
-const form = document.getElementById("cc-form");
 
-confirmBtn.addEventListener("click", displayThankYou);
+form.addEventListener("submit", displayThankYou);
 
 function displayThankYou(event) {
+  console.log("Form Submitted");
   thankYouMessage.classList.add("show");
   form.style.display = "none";
 
