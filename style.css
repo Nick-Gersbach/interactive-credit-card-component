@@ -204,6 +204,10 @@ input.cvc-input-style::placeholder {
   border-color: #ff5050;
 }
 
+.form-control.success input {
+  border-color: #6a23d6;
+}
+
 .form-control.error small {
   visibility: visible;
 }
